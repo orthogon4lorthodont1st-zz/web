@@ -1,0 +1,5 @@
+
+/src/main/resources/*
+/run.sh
+/target/*
+/target/

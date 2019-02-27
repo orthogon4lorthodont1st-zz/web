@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping">
+
+<hibernate-mapping>
+	<class name="com.raf.web.models.UserModel" table="users">
+		<id name="id">
+		</id>
+
+		<property name="name" type="string"></property>
+		<property name="password" type="string"></property>
+		<property name="dateOfBirth"></property>
+	</class>
+
+</hibernate-mapping>  
