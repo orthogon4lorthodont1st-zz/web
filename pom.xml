@@ -6,6 +6,7 @@
 	<artifactId>SimpleApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+
 	<properties>
 		<start-class>com.raf.web.RafsMain</start-class>
 	</properties>

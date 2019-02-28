@@ -2,11 +2,13 @@ package com.raf.web.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.Type;
 
 @Entity
+@Table(name="users")
 public class UserModel {
 
 	@Id

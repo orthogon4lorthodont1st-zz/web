@@ -66,7 +66,6 @@ public class Users {
 	@PermitAll
 	public Response create(@Context HttpServletRequest request, UserModel user) {
 		try {
-			System.out.println("host: " + dbHost);
 			ArrayList<Map<String, String>> errors = Errors.validate(user);
 			
 			if(!errors.isEmpty()) {

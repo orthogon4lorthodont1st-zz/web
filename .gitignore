@@ -1,5 +1,7 @@
 
-/src/main/resources/*
-/run.sh
-/target/*
+/src/main/resources/
+/docker-build.sh
 /target/
+BOOT-INF/
+META-INF/
+org/
