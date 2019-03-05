@@ -74,9 +74,8 @@ public class Users {
 
 			String passwordHash = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
 			user.setPassword(passwordHash);
-
 			UserService.create(user);
-
+			
 			return Response.ok(user).build();
 
 		} catch (Exception e) {

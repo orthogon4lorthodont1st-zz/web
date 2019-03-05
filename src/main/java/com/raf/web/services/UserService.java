@@ -15,12 +15,19 @@ public class UserService {
 		Session dbSession = null;
 		try {
 			SessionFactory factory = DBConnector.getFactory();
-
+			System.out.println("userIdbefore: " + user.getId());
 			dbSession = factory.openSession();
 			tx = dbSession.beginTransaction();
-			dbSession.save(user);
+			System.out.println("transaction opened");
+			dbSession.persist(user);
+			System.out.println(("persisted"));
+			dbSession.flush();
+			System.out.println("id afgter flush : " + user.getId());
 			tx.commit();
+			
+			System.out.println("id afgter commit : " + user.getId());
 
+			
 		} catch (Exception e) {
 			if (tx != null) {
 				tx.rollback();
